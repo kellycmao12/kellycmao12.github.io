@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>kelly mao</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+        </style>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            
+            <nav class="nav-wrapper">
+
+                <div class="left-side">
+                    <header class="logo">
+                        <img src="images/star_logo.png">
+                    </header>
+                </div>
+
+                <div class="right-side">
+                    <div class="nav-link-wrapper active-nav-link">
+                        <a href="https://www.instagram.com/kellycmao/">About</a>
+                    </div>
+                    <div class="nav-link-wrapper active-nav-link">
+                        <a href="https://www.instagram.com/kellycmao/">Design</a>
+                    </div>
+                    <div class="nav-link-wrapper active-nav-link">
+                        <a href="https://www.instagram.com/kellycmao/">Artwork</a>
+                    </div>
+                    <div class="nav-link-wrapper active-nav-link">
+                        <a href="https://www.instagram.com/kellycmao/">Video</a>
+                    </div>
+                    <div class="nav-link-wrapper active-nav-link">
+                        <a href="https://www.instagram.com/kellycmao/">Zines</a>
+                    </div>
+                    <div class="nav-link-wrapper active-nav-link">
+                        <a href="https://www.instagram.com/kellycmao/">Coding</a>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="content-wrapper">
+                <div class="hi-message">
+                    <h1><em>Hi! </em>I'm Kelly.</h1>
+                </div class="blurb">
+                    <h2>I like <em>graphic design</em>, <em>coding</em>, 
+                        and <em>making art</em>. Thanks for checking out my site!</h2>
+                </div>
+            </div>
+
+            <nav class="bottom">
+                <div class="nav-link-wrapper active-nav-link">
+                    <a href="https://www.instagram.com/kellycmao/">Instagram</a>
+                </div>
+                <div class="nav-link-wrapper active-nav-link">
+                    <a href="https://open.spotify.com/user/kellyisakitty?
+                    si=b220958ce3384cea">Spotify</a>
+                </div>
+                <div class="nav-link-wrapper active-nav-link">
+                    <a href="https://github.com/kellycmao12">Github</a>
+                </div>
+                <div class="nav-link-wrapper active-nav-link">
+                    <a href="https://www.linkedin.com/in/kelly-mao/">LinkedIn</a>
+                </div>
+            </nav>
+
+        </div>
+    </body>
+
+    <script>
+        const portfolioItems = document.querySelectorAll(' .portfolio-item-wrapper');
+
+        portfolioItems.forEach(portfolioItem => {
+            portfolioItem.addEventListener('mouseover', () => {
+                portfolioItem.childNodes[1].classList.add('img-darken');
+            })
+            portfolioItem.addEventListener('mouseout', () => {
+                portfolioItem.childNodes[1].classList.remove('img-darken');
+            })
+        })
+    </script>
+</html>
