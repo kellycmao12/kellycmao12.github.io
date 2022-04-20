@@ -8,7 +8,7 @@ body {
     background-image: url("images/background.png");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh
+    height: 100vh;
 }
 
 /* set up the 2 rows */
@@ -28,9 +28,9 @@ body {
     padding: 20%;
 }
 
-.logo img {
+/* .logo img {
     width: 50%;
-}
+} */
 
 #content-col {
     display: grid;
@@ -70,6 +70,7 @@ body {
 a {
     color: black;
     text-decoration: #9DFFA7 none;
+    font-size: 1em;
 }
 
 .nav-wrapper {
@@ -109,7 +110,7 @@ a {
         font-size: 1.4em;
     }
     a {
-        font-size: 0.8em;
+        font-size: 1em;
     }
 }
 
@@ -133,7 +134,7 @@ a:hover {
     background: rgb(157, 255, 167, 0.7);
 }
 
-.logo img:hover {
+/* .logo img:hover {
     animation: rotation 5s infinite linear;
-}
+} */
 
