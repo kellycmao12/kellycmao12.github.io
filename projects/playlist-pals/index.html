@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playlist Pals - Kelly Mao</title>
+
+    <link rel="shortcut icon" type="image/png" href="../../assets/images/logo white bg.png">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../styles.css" />
+    <style>@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Space+Grotesk:wght@400;700&display=swap');</style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@400;600&display=swap');
+        </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+    
+        <div class="row">
+    
+            <div class="col-12 mt-4 mb-3">
+        
+                <nav class="navbar navbar-expand px-0">
+                
+                <a class="navbar-brand" href="../../index.html">
+                    <img class="icon" src="../../assets/images/logo.png" width="40" height="40" alt="" loading="lazy">
+                </a>
+        
+                <ul class="navbar-nav ml-auto">
+        
+                    <li class="nav-item d-none d-sm-block">
+                    <a class="nav-link" href="../../index.html#about">ABOUT</a>
+                    </li>
+        
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../index.html#projects">PROJECTS</a>
+                    </li>
+        
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../index.html#contact">CONTACT</a>
+                    </li>
+        
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../assets/resume.pdf">RESUME</a>
+                    </li>
+        
+                    <li class="nav-item d-none d-sm-block">
+                        <a class="nav-link" href="https://github.com/kellycmao12" target="_blank">
+                            <i class="fa fa-github" style="font-size:1.1rem"></i>
+                        </a>
+                    </li>
+        
+                    <li class="nav-item d-none d-sm-block">
+                        <a class="nav-link" href="https://linkedin.com/in/kellycmao" target="_blank">
+                            <i class="fa fa-linkedin-square" style="font-size:1.1rem"></i>
+                        </a>
+                    </li>
+                </ul>
+                </nav>
+        
+            </div>
+        </div>
+
+          
+        <div class="row">
+            <div class="col-12 offset-sm-0 col-md-8 offset-md-2 col-lg-8 offset-lg-2 vertical-center">
+                <div class="mb-4">
+                    <img src="../../assets/images/projects/playlist pals.png" alt="Playlist Pals picture" />
+                </div>
+                <div id="description" class="mb-5">
+                    <h2 id="title" class="mb-2">Playlist Pals</h2>
+                    <p class="light mb-4">April - May 2022</p>
+                    
+                    <p class="mb-4">Playlist Pals is a website that allows users to recommend and discover songs 
+                        based on specific moods/prompts.
+                    </p>
+
+                    <p class="mb-4">
+                        <em>Contribution: </em>Full-stack web development<br>
+                        <em>Technologies: </em>JavaScript, HTML + CSS, MongoDB, Deezer API, Heroku
+                    </p>
+
+                    <a href="https://playlistpals.herokuapp.com/" 
+                    class="btn btn-primary btn-sm mb-4" role="button" target="_blank">Try it out!</a>
+                    
+                    <p>I developed this platform because although Spotify and other 
+                        music services are good at using AI and data to recommend new music, 
+                        we often find the best music through word-of-mouth recommendations. 
+                        I wanted to capture how special it feels when someone shares their 
+                        favorite song or band with you and hoped to create more of those moments.
+                    </p>
+
+                    <p>
+                        I used <em>Node.js + Express</em> to create the backend, connecting it to 
+                        <em>MongoDB Atlas</em> to store data about users and song recommendations.
+                        For user authentication, I used <em>Passport.js</em> middleware.
+                        I also integrated the <em>Deezer API</em> to search songs and display cover 
+                        art and playable audio clips within the page. I used <em>Sass</em> (automated 
+                        with <em>Grunt</em>) for the front-end styling.
+                    </p>
+
+                    <p class="mb-4">
+                        I am still working on building it out, and I hope to 
+                        add features where users can create playlists or connect to their Spotify 
+                        to save songs.
+                    </p>
+                    
+                </div>
+                
+                <!-- <div id="process" class="mb-5">
+                    <h3 class="mb-4">Process</h3>
+
+                    <h5>Ideation</h5>
+                    <p>I drafted a sitemap, defining the pages, features, and user stories/use cases.
+                        I also decided on the technologies and data models I would be using.
+                    </p>
+
+                    <h5>Design</h5>
+                    <p>I sketched out some low-fidelity wireframes and then refined the interface 
+                        design in Figma.
+                    </p>
+
+                    <h5>Development</h5>
+                    <p>I sketched out some low-fidelity wireframes and then refined the interface 
+                        design in Figma.
+                    </p>
+
+                </div> -->
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
