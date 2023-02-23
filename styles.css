@@ -98,3 +98,8 @@ img {
     font-size:0.6rem;
     line-height:1rem
 }
+
+hr {
+    border-top: 1px solid #41449F;
+  }
+
