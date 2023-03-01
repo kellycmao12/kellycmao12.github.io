@@ -28,8 +28,7 @@ a:hover, i:hover {
 }
 
 a:hover, .nav-link:hover {
-    text-decoration: wavy underline;
-    text-decoration-skip: none;
+    text-decoration: underline;
 }
 
 .nav-item, .proj-name {
