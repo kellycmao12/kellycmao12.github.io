@@ -19,4 +19,14 @@ body {
     height: 10vh;
     font-size: 1.2rem;
     color: #41449F;
-  }
+    text-transform: uppercase;
+}
+
+#contact-message {
+    font-family: "Bricolage Grotesque", sans-serif;
+    text-align: center;
+    padding: 0px;
+    font-size: 1.2rem;
+    color: #41449F;
+    text-transform: uppercase;
+}
