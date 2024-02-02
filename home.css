@@ -3,30 +3,165 @@ body {
     font-family: 'Kantumruy Pro', sans-serif;
     font-size: 18px;
     margin-bottom:2rem;
-    background-color: #fcf0f0;
-    /* background-color: #ffffff; */
-    background-image: url("assets/images/gradient.png");
+    background-color: #FFFFFF;
+    /* background-image: url("assets/images/gradient.png");
     background-size: cover;
     background-size: 100% 90%;
     background-repeat: no-repeat;
-    background-attachment: scroll;
+    background-attachment: scroll; */
+}
+
+#hi-message {
+    font-size: 5rem;
+    font-weight: 800;
+    color: rgb(33, 33, 33);
+}
+
+#about {
+    padding: 0px;
+    height: 60vh;
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+.underline {
+    cursor: pointer;
+}
+
+#nyc {
+    text-decoration: underline wavy #FF249A;
+    /* font-weight: bold;
+    color: #FF249A; */
+}
+
+#sf {
+    text-decoration: underline wavy #FF922E;
+    /* font-weight: bold;
+    color: #FF922E; */
+}
+
+#creative-tech {
+    text-decoration: underline wavy #679fff;
+    /* font-weight: bold;
+    color: #FF922E; */
+}
+
+.nyc-image {
+    width: 60%;
+    height: auto;
+    position: absolute;
+    bottom: 0px;
+    display: none;
+    transition: transform 0.8s ease-in-out;
+}
+
+.sf-image {
+    width: 70%;
+    height: auto;
+    position: absolute;
+    bottom: 0px;
+    right: -100px;
+    display: none;
+    transition: transform 0.8s ease-in-out;
+}
+
+.creative-tech-image {
+    width: 70%;
+    height: auto;
+    position: absolute;
+    bottom: -100px;
+    right: -100px;
+    display: none;
+    transition: transform 0.8s ease-in-out;
+}
+
+#work-header {
+    font-family: "Karla", sans-serif;
+    text-align: left;
+    padding: 0px;
+    /* height: 10vh; */
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: rgb(33, 33, 33);
 }
 
 #work-arrow {
-    font-family: "Bricolage Grotesque", sans-serif;
-    text-align: right;
+    font-family: "Karla", sans-serif;
+    text-align: left;
     padding: 0px;
-    height: 10vh;
+    /* height: 10vh; */
     font-size: 1.2rem;
-    color: #41449F;
+    color: rgb(33, 33, 33);
     text-transform: uppercase;
 }
 
+.project-slide {
+    transform: translateX(-200%);
+    transition: transform 0.8s ease-in-out;
+}
+
+.label-slide {
+    transform: translateX(200%);
+    transition: transform 0.8s ease-in-out;
+}
+
+.project-row {
+    display: flex;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.subhead {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f2f2f2;
+}
+
+.table-project {
+    flex: 2;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+#work-table {
+    width: 100%;
+}
+
+#work-table tr {
+    border-bottom: 1px solid rgb(33, 33, 33);
+}
+
+td {
+    margin-top: 50px;
+}
+
+tr td:nth-child(1) {
+    vertical-align: top;
+}
+
+tr td:nth-child(2) {
+    width: 60%;
+    text-align: left;
+}
+
+.number {
+    font-family: "Karla", sans-serif;
+    font-size: 4rem;
+    font-weight: 400;
+}
+
+.subhead {
+    font-family: "Karla", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
 #contact-message {
-    font-family: "Bricolage Grotesque", sans-serif;
+    font-family: "Karla", sans-serif;
     text-align: center;
     padding: 0px;
     font-size: 1.2rem;
-    color: #41449F;
+    color: rgb(33, 33, 33);
     text-transform: uppercase;
 }

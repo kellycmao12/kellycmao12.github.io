@@ -14,9 +14,11 @@
     <link rel="stylesheet" href="home.css" />
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@200;400;600&display=swap&family=Space+Grotesk:wght@400;700&display=swap&family=Xanh+Mono:ital@0;1&display=swap"&family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=Bricolage+Grotesque:opsz,wght@12..96,200;12..96,300;12..96,400;12..96,500;12..96,600;12..96,700');
+      @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
+    
+  </head>
 
 <body>
   <div class="container">
@@ -28,7 +30,7 @@
         <nav class="navbar navbar-expand px-0">
         
           <a class="navbar-brand" href="">
-              <img class="icon" src="assets/images/logo.png" width="40" height="40" alt="" loading="lazy">
+              <img class="icon" src="assets/images/logo 1.png" width="40" height="40" alt="" loading="lazy">
           </a>
 
           <ul class="navbar-nav ml-auto">
@@ -74,29 +76,42 @@
             <div id="about" class="row col-12 mb-4 align-items-center">
 
               <div class="col-sm-12 col-md-7 mb-4">
-                <h1 id="hi-message">Hi! I'm Kelly.</h1>
-                <p>I'm a designer and developer based in NYC & SF. I’m 
-                  passionate about art and technology, and I’m especially 
+                <h1 id="hi-message" class="mb-4">Hi! I'm Kelly.</h1>
+                <p>I'm a designer and developer based in 
+                  <span class="underline" id="nyc">NYC</span> & 
+                  <span class="underline" id="sf">SF</span>. I’m 
+                  passionate about 
+                  <span class="underline" id="creative-tech">creative technology</span>, 
+                  and am especially 
                   interested in rethinking how user experiences can be made more 
                   playful and human.
                 </p>
               </div>
 
+              <div class="nyc-image-container">
+                <img class="nyc-image" src="assets/images/nyc.png" alt="NYC Image">
+              </div>
+
+              <div class="sf-image-container">
+                <img class="sf-image" src="assets/images/sf.png" alt="SF Image">
+              </div>
+
+              <div class="creative-tech-container">
+                <img class="creative-tech-image" src="assets/images/creative tech.png" alt="Creative Tech Image">
+              </div>
+
             </div>
 
-          <!-- </div> -->
-
-          <div class="col-12">
+            <hr class="mt-2 mb-4">
             <div id="work-arrow">My Work ↓</div>
-          </div>
-
-          <div class="col-12">
+            <!-- <div id="work-header">My work . . .</div> -->
+            <hr class="mt-4 mb-0">
             
-            <div class="row mb-5">
-              <div class="col-12 col-med-7 col-lg-7">
+            <div class="row mb-5 project-row">
+              <div class="col-12 col-med-7 col-lg-7 project-slide" id="project-slide-1">
                 <p><a href="projects/nypl-linkup/"><img class="proj-pic" src="assets/images/projects/nypl linkup.png" alt="NYPL Linkup thumbnail" /></a></p>
               </div>
-              <div class="col-12 col-med-5 col-lg-5">
+              <div class="col-12 col-med-5 col-lg-5 label-slide" id="label-slide-1">
                 <p class="proj-name"><a href="projects/nypl-linkup/">NYPL Linkup</a></p>
                 <p class="tag">UI/UX Design</p>
                 <p class="tag">User Research</p>
@@ -107,11 +122,11 @@
               </div>
             </div>
 
-            <div class="row mb-5">
-              <div class="col-12 col-med-7 col-lg-7">
+            <div class="row mb-5 project-row">
+              <div class="col-12 col-med-7 col-lg-7 project-slide" id="project-slide-2">
                 <p><a href="projects/albert"><img class="proj-pic" src="assets/images/projects/albert.png" alt="Albert Redesign thumbnail" /></a></p>
               </div>
-              <div class="col-12 col-med-5 col-lg-5">
+              <div class="col-12 col-med-5 col-lg-5 label-slide" id="label-slide-2">
                 <p class="proj-name"><a href="projects/albert">NYU Albert Redesign</a></p>
                 <p class="tag">UI/UX Design</p>
                 <p class="tag">User Research</p>
@@ -122,11 +137,11 @@
               </div>
             </div>
 
-            <div class="row mb-5">
-              <div class="col-12 col-med-7 col-lg-7">
+            <div class="row mb-5 project-row">
+              <div class="col-12 col-med-7 col-lg-7 project-slide" id="project-slide-3">
                 <p><a href="projects/playlist-pals"><img class="proj-pic" src="assets/images/projects/playlist pals.png" alt="Playlist Pals thumbnail" /></a></p>
               </div>
-              <div class="col-12 col-med-5 col-lg-5">
+              <div class="col-12 col-med-5 col-lg-5 label-slide" id="label-slide-3">
                 <p class="proj-name"><a href="projects/playlist-pals">Playlist Pals</a></p>
                 <p class="tag">Web Development</p>
                 <p class="tagline">
@@ -136,7 +151,7 @@
             </div>
               
             </div>
-          </div>
+          
 
           <div class="col-12 offset-sm-0 col-md-8 offset-md-2 col-lg-8 offset-lg-2 vertical-center">
       
@@ -148,9 +163,9 @@
           </div>
 
       </div>
-      <hr class="mt-2 mb-3">
+      <!-- <hr class="mt-2 mb-3"> -->
 
-      <div class="row mt-4 mb-5">
+      <!-- <div class="row mt-4 mb-5">
           <div id="contact" class="col-12 offset-sm-0 col-md-8 offset-md-2 col-lg-8 offset-lg-2 vertical-center">
               <div class="row">
                   <div class="col mt-4">
@@ -166,11 +181,13 @@
                   </div>
               </div>
 
-        </div>
+        </div> -->
 
 
       </div>
   </div>
+
+<script src="script.js"></script>
 </body>
 
 </html>

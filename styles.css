@@ -3,7 +3,7 @@ body {
     font-family: 'Kantumruy Pro', sans-serif;
     font-size: 18px;
     margin-bottom:2rem;
-    background-color: #fcf0f0;
+    background-color: #FFFFFF;
     /* background-image: url("assets/images/gradient.png");
     background-size: cover;
     background-size: 100% 90%;
@@ -13,10 +13,10 @@ body {
     
 h1, h2, h3, h4, h5, h6 {
     
-    font-family: "Bricolage Grotesque", sans-serif;
-    font-weight: 400;
+    font-family: "Karla", sans-serif;
+    font-weight: 600;
     /* letter-spacing: 0.1rem; */
-    color: #41449F;
+    color: rgb(33, 33, 33);
 }
 
 h2 {
@@ -36,7 +36,7 @@ h5 {
 }
 
 a, i {
-    color: #41449F;
+    color: rgb(33, 33, 33);
 }
 
 a:hover, i:hover {
@@ -48,7 +48,7 @@ a:hover, .nav-link:hover {
 }
 
 .nav-item {
-    font-family: "Bricolage Grotesque", sans-serif;
+    font-family: "Karla", sans-serif;
     font-weight: 400;
     font-size: 1.2rem;
 }
@@ -59,30 +59,23 @@ a:hover, .nav-link:hover {
 }
 
 .proj-name {
-    font-family: "Bricolage Grotesque", sans-serif;
+    font-family: "Karla", sans-serif;
     margin: 5% 0;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 36px;
-    line-height: 1;
-    color: #41449F;
+    line-height: 1.2;
+    color: rgb(33, 33, 33);
     
 }
 
 .proj-name-big {
-    font-family: "Bricolage Grotesque", sans-serif;
+    font-family: "Karla", sans-serif;
     margin: 5% 0;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 48px;
     line-height: 1;
-    color: #41449F;
+    color: rgb(33, 33, 33);
     
-}
-
-#about {
-    padding: 0px;
-    height: 70vh;
-    font-size: 1.8rem;
-    line-height: 1.2;
 }
 
 #tools {
@@ -90,12 +83,12 @@ a:hover, .nav-link:hover {
 }
 
 .light {
-    color: #41449F;
+    color: rgb(33, 33, 33);
 }
-
+/* 
 .proj-pic:hover {
     filter: drop-shadow(0px 0px 10px #6e71c2bd);
-}
+} */
 
 strong {
     color:#36003F;
@@ -108,7 +101,7 @@ em {
 }
 
 .btn {
-    background-color: #41449F;
+    background-color: rgb(33, 33, 33);
     color:#FFF8F8;
     font-size:18px;
     line-height:2rem;
@@ -141,25 +134,25 @@ img {
 } */
 
 hr {
-    border-top: 1px solid #41449F;
+    border-top: 1px solid rgb(33, 33, 33);
 }
 
 .quote-pink {
-    font-family: "Bricolage Grotesque", sans-serif;
+    font-family: "Karla", sans-serif;
     font-size: 22px;
     font-weight: bold;
     color: #D13878;
 }
 
 .quote-blue {
-    font-family: "Bricolage Grotesque", sans-serif;
+    font-family: "Karla", sans-serif;
     font-size: 22px;
     font-weight: bold;
     color: #5182cd;
 }
 
 .quote-green {
-    font-family: "Bricolage Grotesque", sans-serif;
+    font-family: "Karla", sans-serif;
     font-size: 22px;
     font-weight: bold;
     color: #529f74;
