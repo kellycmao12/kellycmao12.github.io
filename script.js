@@ -3,19 +3,19 @@ document.addEventListener("DOMContentLoaded", function() {
         var scrollPosition = window.scrollY;
 
         // Adjust the threshold value as needed
-        if (scrollPosition >= 200) {
+        if (scrollPosition >= 100) {
             document.getElementById("project-slide-1").style.transform = "translateX(0)";
             document.getElementById("label-slide-1").style.transform = "translateX(0)";
         }
 
         // Adjust the threshold value as needed
-        if (scrollPosition >= 600) {
+        if (scrollPosition >= 700) {
             document.getElementById("project-slide-2").style.transform = "translateX(0)";
             document.getElementById("label-slide-2").style.transform = "translateX(0)";
         }
 
         // Adjust the threshold value as needed
-        if (scrollPosition >= 1000) {
+        if (scrollPosition >= 1300) {
             document.getElementById("project-slide-3").style.transform = "translateX(0)";
             document.getElementById("label-slide-3").style.transform = "translateX(0)";
         }
@@ -33,12 +33,12 @@ document.addEventListener("DOMContentLoaded", function() {
     var creativeTechImage = document.querySelector(".creative-tech-image");
 
     nyc.addEventListener('mouseover', function() {
-        nyc.style.color = '#FF249A';
+        nyc.style.color = '#68ADFF;';
         nycImage.style.display = "block";
     });
 
     nyc.addEventListener('mouseout', function() {
-        nyc.style.color = '#333333';
+        nyc.style.color = '#68ADFF;';
         nycImage.style.display = "none";
     });
 

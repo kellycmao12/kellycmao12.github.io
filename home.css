@@ -1,79 +1,69 @@
 body {
-    color: #210203;
+    color: #333333;
     font-family: 'Kantumruy Pro', sans-serif;
     font-size: 18px;
     margin-bottom:2rem;
     background-color: #FFFFFF;
-    /* background-image: url("assets/images/gradient.png");
-    background-size: cover;
-    background-size: 100% 90%;
-    background-repeat: no-repeat;
-    background-attachment: scroll; */
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
-#hi-message {
-    font-size: 5rem;
+.main-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.hi-message {
     font-weight: 800;
-    color: rgb(33, 33, 33);
+    color: #333333;
 }
 
-#about {
+#intro {
+    font-family: 'Karla', sans-serif;
     padding: 0px;
-    height: 60vh;
-    font-size: 24px;
-    line-height: 1.5;
+    height: 70vh;
+    display: flex;
+    align-items: flex-end;
+
+    font-size: 42px;
+    line-height: 1.3;
+    font-weight: 200;
+    text-align: justify;
 }
 
-.underline {
-    cursor: pointer;
+@media only screen and (max-width: 767px) {
+    #intro {
+        font-size: 24px; /* Adjust font size for small screens */
+    }
+}
+
+.interactive {
+    font-weight: 500;
+}
+
+#product-designer {
+    color: #FF5CC7;
 }
 
 #nyc {
-    text-decoration: underline wavy #FF249A;
-    /* font-weight: bold;
-    color: #FF249A; */
-}
-
-#sf {
-    text-decoration: underline wavy #FF922E;
-    /* font-weight: bold;
-    color: #FF922E; */
+    color: #68ADFF;
 }
 
 #creative-tech {
-    text-decoration: underline wavy #679fff;
-    /* font-weight: bold;
-    color: #FF922E; */
+    color: #A38CFF;
 }
 
-.nyc-image {
-    width: 60%;
-    height: auto;
-    position: absolute;
-    bottom: 0px;
-    display: none;
-    transition: transform 0.8s ease-in-out;
+#playful {
+    color: #FF9F1C;
 }
 
-.sf-image {
-    width: 70%;
-    height: auto;
-    position: absolute;
-    bottom: 0px;
-    right: -100px;
-    display: none;
-    transition: transform 0.8s ease-in-out;
+#human {
+    color: #4CD171;
 }
 
-.creative-tech-image {
-    width: 70%;
-    height: auto;
-    position: absolute;
-    bottom: -100px;
-    right: -100px;
-    display: none;
-    transition: transform 0.8s ease-in-out;
-}
+/* .nyc-image {
+
+} */
 
 #work-header {
     font-family: "Karla", sans-serif;
@@ -95,6 +85,12 @@ body {
     text-transform: uppercase;
 }
 
+.project-row {
+    display: flex;
+    align-items: center;
+    margin: 50px 0;
+}
+
 .project-slide {
     transform: translateX(-200%);
     transition: transform 0.8s ease-in-out;
@@ -105,63 +101,11 @@ body {
     transition: transform 0.8s ease-in-out;
 }
 
-.project-row {
-    display: flex;
-    align-items: center;
-    margin: 40px 0;
-}
-
-.subhead {
-    flex: 1;
-    padding: 10px;
-    border: 1px solid #ccc;
-    background-color: #f2f2f2;
-}
-
-.table-project {
-    flex: 2;
-    padding: 10px;
-    border: 1px solid #ccc;
-}
-
-#work-table {
-    width: 100%;
-}
-
-#work-table tr {
-    border-bottom: 1px solid rgb(33, 33, 33);
-}
-
-td {
-    margin-top: 50px;
-}
-
-tr td:nth-child(1) {
-    vertical-align: top;
-}
-
-tr td:nth-child(2) {
-    width: 60%;
-    text-align: left;
-}
-
-.number {
-    font-family: "Karla", sans-serif;
-    font-size: 4rem;
-    font-weight: 400;
-}
-
-.subhead {
-    font-family: "Karla", sans-serif;
-    font-size: 1.6rem;
-    font-weight: 600;
-}
-
 #contact-message {
     font-family: "Karla", sans-serif;
     text-align: center;
     padding: 0px;
     font-size: 1.2rem;
-    color: rgb(33, 33, 33);
+    color: #333333;
     text-transform: uppercase;
 }

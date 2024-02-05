@@ -23,33 +23,33 @@
 <body>
   <div class="container">
     
-    <div class="row">
+    <div class="row navbar-row">
 
-      <div class="col-12 mt-4 mb-5">
+      <div class="col-12 mt-4 mb-3">
 
         <nav class="navbar navbar-expand px-0">
         
           <a class="navbar-brand" href="">
-              <img class="icon" src="assets/images/logo 1.png" width="40" height="40" alt="" loading="lazy">
+              <img class="icon" src="assets/images/logo.png" width="40" height="40" alt="" loading="lazy">
           </a>
 
           <ul class="navbar-nav ml-auto">
 
-            <li class="nav-item d-none d-sm-block">
-              <a class="nav-link" href="#about">ABOUT</a>
-            </li>
-
             <li class="nav-item">
-                <a class="nav-link" href="work.html">WORK</a>
-            </li>
+              <a class="nav-link" href="work.html">WORK</a>
+          </li>
 
-            <li class="nav-item">
-                <a class="nav-link" href="#contact">CONTACT</a>
-            </li>
+          <li class="nav-item">
+            <a class="nav-link" href="play.html">PLAY</a>
+          </li>
 
-            <li class="nav-item">
-                <a class="nav-link" href="assets/resume.pdf">RESUME</a>
-            </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">ABOUT</a>
+          </li>
+
+          <li class="nav-item d-none d-sm-block">
+              <a class="nav-link" href="assets/resume.pdf">RESUME</a>
+          </li>
 
             <li class="nav-item d-none d-sm-block">
                 <a class="nav-link" href="https://github.com/kellycmao12" target="_blank">
@@ -68,101 +68,97 @@
       </div>
 
     </div>
-      
-      <div class="row"> 
-          <div class="col-12">
-          <!-- <div class="col-12 offset-sm-0 col-md-8 offset-md-2 col-lg-8 offset-lg-2 vertical-center"> -->
+  
+    <!-- <div class="col-12 offset-sm-0 col-md-8 offset-md-2 col-lg-8 offset-lg-2 vertical-center"> -->
 
-            <div id="about" class="row col-12 mb-4 align-items-center">
+      <div id="intro">
 
-              <div class="col-sm-12 col-md-7 mb-4">
-                <h1 id="hi-message" class="mb-4">Hi! I'm Kelly.</h1>
-                <p>I'm a designer and developer based in 
-                  <span class="underline" id="nyc">NYC</span> & 
-                  <span class="underline" id="sf">SF</span>. I’m 
-                  passionate about 
-                  <span class="underline" id="creative-tech">creative technology</span>, 
-                  and am especially 
-                  interested in rethinking how user experiences can be made more 
-                  playful and human.
-                </p>
-              </div>
-
-              <div class="nyc-image-container">
-                <img class="nyc-image" src="assets/images/nyc.png" alt="NYC Image">
-              </div>
-
-              <div class="sf-image-container">
-                <img class="sf-image" src="assets/images/sf.png" alt="SF Image">
-              </div>
-
-              <div class="creative-tech-container">
-                <img class="creative-tech-image" src="assets/images/creative tech.png" alt="Creative Tech Image">
-              </div>
-
-            </div>
-
-            <hr class="mt-2 mb-4">
-            <div id="work-arrow">My Work ↓</div>
-            <!-- <div id="work-header">My work . . .</div> -->
-            <hr class="mt-4 mb-0">
+        <div class="col-sm-12 col-md-12 mb-4">
+          <!-- <h1 id="hi-message" class="mb-4">Hi! I'm Kelly.</h1> -->
+          <p>
+            <span class="hi-message">Hi, I'm Kelly!</span>
+            I’m a <span class="interactive" id="product-designer">product designer</span> based in 
+            <span class="interactive" id="nyc">NYC</span>.
+            I’m passionate about 
+            <span class="interactive" id="creative-tech">creative tech</span>
+            and rethinking how user experiences 
+            can be made more 
+            <span class="interactive" id="playful">playful</span>
+            and 
+            <span class="interactive" id="human">human</span>.
             
-            <div class="row mb-5 project-row">
-              <div class="col-12 col-med-7 col-lg-7 project-slide" id="project-slide-1">
-                <p><a href="projects/nypl-linkup/"><img class="proj-pic" src="assets/images/projects/nypl linkup.png" alt="NYPL Linkup thumbnail" /></a></p>
-              </div>
-              <div class="col-12 col-med-5 col-lg-5 label-slide" id="label-slide-1">
-                <p class="proj-name"><a href="projects/nypl-linkup/">NYPL Linkup</a></p>
-                <p class="tag">UI/UX Design</p>
-                <p class="tag">User Research</p>
-                <p class="tag">Prototyping</p>
-                <p class="tagline">
-                  An app imagined for the New York Public Library (NYPL) system to help library patrons keep track of events and stay connected with their communities.
-                </p>
-              </div>
-            </div>
+          </p>
+        </div>
 
-            <div class="row mb-5 project-row">
-              <div class="col-12 col-med-7 col-lg-7 project-slide" id="project-slide-2">
-                <p><a href="projects/albert"><img class="proj-pic" src="assets/images/projects/albert.png" alt="Albert Redesign thumbnail" /></a></p>
-              </div>
-              <div class="col-12 col-med-5 col-lg-5 label-slide" id="label-slide-2">
-                <p class="proj-name"><a href="projects/albert">NYU Albert Redesign</a></p>
-                <p class="tag">UI/UX Design</p>
-                <p class="tag">User Research</p>
-                <p class="tag">Prototyping</p>
-                <p class="tagline">
-                  A personal project I worked on to imagine how the course search website for NYU students could be improved.
-                </p>
-              </div>
-            </div>
+<!-- 
+    <div class="nyc-image-container">
+      <img class="nyc-image" src="assets/images/nyc.png" alt="NYC Image">
+    </div>
 
-            <div class="row mb-5 project-row">
-              <div class="col-12 col-med-7 col-lg-7 project-slide" id="project-slide-3">
-                <p><a href="projects/playlist-pals"><img class="proj-pic" src="assets/images/projects/playlist pals.png" alt="Playlist Pals thumbnail" /></a></p>
-              </div>
-              <div class="col-12 col-med-5 col-lg-5 label-slide" id="label-slide-3">
-                <p class="proj-name"><a href="projects/playlist-pals">Playlist Pals</a></p>
-                <p class="tag">Web Development</p>
-                <p class="tagline">
-                  A website that allows users to recommend and discover songs based on specific moods/prompts.
-                </p>
-              </div>
-            </div>
-              
-            </div>
+    <div class="creative-tech-container">
+      <img class="creative-tech-image" src="assets/images/creative tech.png" alt="Creative Tech Image">
+    </div> -->
+
+    </div>
+
+    <div class="col-12">
+      <hr class="mt-2 mb-4">
+      <div id="work-arrow">My Work ↓</div>
+      <hr class="mt-4 mb-0">
+    </div>
+    
+    <div class="row mb-5 project-row">
+      <div class="col-12 col-med-7 col-lg-7 project-slide" id="project-slide-1">
+        <p><a href="projects/nypl-linkup/"><img class="proj-pic" src="assets/images/projects/nypl linkup.png" alt="NYPL Linkup thumbnail" /></a></p>
+      </div>
+      <div class="col-12 col-med-5 col-lg-5 label-slide" id="label-slide-1">
+        <p class="proj-name"><a href="projects/nypl-linkup/">NYPL Linkup</a></p>
+        <p class="tag">UI/UX Design</p>
+        <p class="tag">User Research</p>
+        <p class="tag">Prototyping</p>
+        <p class="tagline">
+          An app imagined for the New York Public Library (NYPL) system to help library patrons keep track of events and stay connected with their communities.
+        </p>
+      </div>
+    </div>
+
+    <div class="row mb-5 project-row">
+      <div class="col-12 col-med-7 col-lg-7 project-slide" id="project-slide-2">
+        <p><a href="projects/albert"><img class="proj-pic" src="assets/images/projects/albert.png" alt="Albert Redesign thumbnail" /></a></p>
+      </div>
+      <div class="col-12 col-med-5 col-lg-5 label-slide" id="label-slide-2">
+        <p class="proj-name"><a href="projects/albert">NYU Albert Redesign</a></p>
+        <p class="tag">UI/UX Design</p>
+        <p class="tag">User Research</p>
+        <p class="tag">Prototyping</p>
+        <p class="tagline">
+          A personal project I worked on to imagine how the course search website for NYU students could be improved.
+        </p>
+      </div>
+    </div>
+
+    <div class="row mb-5 project-row">
+      <div class="col-12 col-med-7 col-lg-7 project-slide" id="project-slide-3">
+        <p><a href="projects/playlist-pals"><img class="proj-pic" src="assets/images/projects/playlist pals.png" alt="Playlist Pals thumbnail" /></a></p>
+      </div>
+      <div class="col-12 col-med-5 col-lg-5 label-slide" id="label-slide-3">
+        <p class="proj-name"><a href="projects/playlist-pals">Playlist Pals</a></p>
+        <p class="tag">Web Development</p>
+        <p class="tagline">
+          A website that allows users to recommend and discover songs based on specific moods/prompts.
+        </p>
+      </div>
+    </div>
           
 
           <div class="col-12 offset-sm-0 col-md-8 offset-md-2 col-lg-8 offset-lg-2 vertical-center">
       
-            <div class="row mt-1 mb-4">
+            <div class="row mt-1 mb-5">
               <div class="col-6 offset-3 mt-1 mb-4">
                   <a class="btn btn-primary btn-block" href="work.html" role="button">See All Work</a>
               </div>
             </div>
           </div>
-
-      </div>
       <!-- <hr class="mt-2 mb-3"> -->
 
       <!-- <div class="row mt-4 mb-5">
@@ -181,10 +177,9 @@
                   </div>
               </div>
 
-        </div> -->
+          </div>
 
-
-      </div>
+      </div> -->
   </div>
 
 <script src="script.js"></script>
