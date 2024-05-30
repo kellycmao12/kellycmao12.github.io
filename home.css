@@ -89,6 +89,10 @@ html {
     text-transform: uppercase;
 }
 
+#work-arrow a {
+    text-decoration: none;
+}
+
 .project-row {
     display: flex;
     align-items: center;
