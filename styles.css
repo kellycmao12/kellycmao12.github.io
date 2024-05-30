@@ -170,6 +170,7 @@ hr {
 .tag {
     display: inline-block;
     border-radius: 20px;
+    font-size: 14px;
     background-color: rgb(227, 227, 227);
     font-family: 'Kantumruy Pro', sans-serif;
     color: rgb(78, 78, 94);
@@ -178,8 +179,10 @@ hr {
     cursor: pointer;   
   }
 
+/* the single-line description shown w a project's thumbnail on home/work/play pages */
 .tagline {
     margin-top: 15px;
+    font-size: 14px;
 }
 
 .work-grid {
