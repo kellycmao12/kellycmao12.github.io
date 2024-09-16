@@ -20,10 +20,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
+
 <body>
   <div class="container">
-    
-    <div class="row navbar-row">
+    <div id="navbar"></div>
+
+    <script>
+      // Load the navbar.html content into the div with id "navbar"
+      document.addEventListener("DOMContentLoaded", function() {
+        fetch("navbar.html")
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById("navbar").innerHTML = data;
+          });
+      });
+    </script>
+
+    <!-- <div class="row navbar-row">
 
       <div class="col-12 mt-4 mb-3">
 
@@ -62,7 +75,7 @@
         </nav>
 
       </div>
-    </div>
+    </div> -->
 
     <div class="row about-row"> 
       <div id="about" class="col-12 col-md-6 col-lg-7 mb-5">
