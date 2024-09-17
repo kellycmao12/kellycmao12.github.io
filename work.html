@@ -23,45 +23,17 @@
 <body>
     <div class="container">
     
-        <div class="row navbar-row">
-
-            <div class="col-12 mt-4 mb-3">
-
-                <nav class="navbar navbar-expand px-0">
-                
-                <a class="navbar-brand" href="index.html">
-                    <img class="icon" src="assets/images/logo.png" width="40" height="40" alt="" loading="lazy">
-                </a>
-
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="work.html">WORK</a>
-                    </li>
-
-                    <li class="nav-item">
-                    <a class="nav-link" href="about.html">ABOUT</a>
-                    </li>
-
-                    <li class="nav-item d-none d-sm-block">
-                        <a class="nav-link" href="assets/resume.pdf">RESUME</a>
-                    </li>
-
-                    <li class="nav-item d-none d-sm-block">
-                        <a class="nav-link" href="https://github.com/kellycmao12" target="_blank">
-                            <i class="fa fa-github" style="font-size:1.1rem"></i>
-                        </a>
-                    </li>
-
-                    <li class="nav-item d-none d-sm-block">
-                        <a class="nav-link" href="https://linkedin.com/in/kellycmao" target="_blank">
-                            <i class="fa fa-linkedin-square" style="font-size:1.1rem"></i>
-                        </a>
-                    </li>
-                </ul>
-                </nav>
-
-            </div>
-        </div>
+        <div id="navbar"></div>
+        <script>
+        // Load the navbar.html content into the div with id "navbar"
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch("navbar.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("navbar").innerHTML = data;
+            });
+        });
+        </script>
         
         <div class="row work-grid"> 
             <div class="col-12 col-md-6 col-lg-4 mb-5">
@@ -77,6 +49,27 @@
             </div>
 
             <div class="col-12 col-md-6 col-lg-4 mb-5">
+                <p><a href="projects/picture-studio/"><img class="proj-pic" src="assets/images/projects/picture studio.png" alt="Picture Studio thumbnail" /></a></p>
+                <p class="proj-name"><a href="projects/picture-studio/">Picture Studio</a></p>
+                <p class="tag">UI/UX Design</p>
+                <p class="tag">AI</p>
+                <p class="mt-2 tagline">
+                    Product design and animation work for my internship at PictureStudio AI.
+                </p>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 mb-5">
+                <p><a href="projects/nucleus-global/"><img class="proj-pic" src="assets/images/projects/nucleus global.png" alt="Nucleus Global thumbnail" /></a></p>
+                <p class="proj-name"><a href="projects/topology-of-memory/">Nucleus Global</a></p>
+                <p class="tag">UI/UX Design</p>
+                <p class="tag">Web Dev</p>
+                <p class="tag">Healthcare</p>
+                <p class="mt-2 tagline">
+                    Design and web development work for my internship at Nucleus Global.
+                </p>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 mb-5">
                 <p><a href="projects/nypl-linkup/"><img class="proj-pic" src="assets/images/projects/nypl linkup.png" alt="NYPL Linkup thumbnail" /></a></p>
                 <p class="proj-name"><a href="projects/nypl-linkup/">NYPL Linkup</a></p>
                 <p class="tag">UI/UX Design</p>
@@ -87,22 +80,22 @@
             </div>
 
             <div class="col-12 col-md-6 col-lg-4 mb-5">
-                <p><a href="projects/delta"><img class="proj-pic" src="assets/images/projects/delta redesign.png" alt="Delta Boarding Pass Redesign thumbnail" /></a></p>
-                <p class="proj-name"><a href="projects/delta">Delta Boarding Pass Redesign</a></p>
-                <p class="tag">UI/UX Design</p>
-                <p class="tag">Information Design</p>
-                <p class="mt-2 tagline">
-                    A redesign of the Delta Airlines boarding pass.
-                </p>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-4 mb-5">
                 <p><a href="projects/albert"><img class="proj-pic" src="assets/images/projects/albert.png" alt="Albert Redesign thumbnail" /></a></p>
                 <p class="proj-name"><a href="projects/albert">NYU Albert Redesign</a></p>
                 <p class="tag">UI/UX Design</p>
                 <p class="tag">User Research</p>
                 <p class="mt-2 tagline">
                     A personal redesign of NYU Albert, the course search website used by NYU students.
+                </p>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 mb-5">
+                <p><a href="projects/delta"><img class="proj-pic" src="assets/images/projects/delta redesign.png" alt="Delta Boarding Pass Redesign thumbnail" /></a></p>
+                <p class="proj-name"><a href="projects/delta">Delta Boarding Pass Redesign</a></p>
+                <p class="tag">UI/UX Design</p>
+                <p class="tag">Information Design</p>
+                <p class="mt-2 tagline">
+                    A redesign of the Delta Airlines boarding pass.
                 </p>
             </div>
 
@@ -176,7 +169,14 @@
                 <p class="tag">Game Dev</p>
                 <p class="mt-2 tagline">A game/interactive art piece based on a scene from The Phantom Tollbooth by Norton Juster.</p>
             </div>
-    
+
+            <!-- <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <p><a href="projects/100-days-of-lines/"><img class="proj-pic" src="" alt="100 Days of Lines thumbnail" /></a></p>
+                <p class="proj-name">100 Days of Lines</p>
+                <p class="tag">Illustration</p>
+                <p class="mt-2 tagline">A project where I drew every day for 100 days, focusing on line art.</p>
+            </div>
+     -->
             <div class="col-12 col-md-6 col-lg-4 mb-5">
                 <p><a href="projects/asynchronous-world"><img class="proj-pic" src="assets/images/projects/asynchronous world.png" alt="An Asynchronous World thumbnail" /></a></p>
                 <p class="proj-name"><a href="projects/asynchronous-world">An Asynchronous World</a></p>

@@ -20,46 +20,17 @@
 <body>
     <div class="container">
     
-        <div class="row">
-    
-            <div class="col-12 mt-4 mb-3">
-        
-                <nav class="navbar navbar-expand px-0">
-                
-                <a class="navbar-brand" href="../../index.html">
-                    <img class="icon" src="../../assets/images/logo.png" width="40" height="40" alt="" loading="lazy">
-                </a>
-        
-                <ul class="navbar-nav ml-auto">
-        
-                    <li class="nav-item">
-                        <a class="nav-link" href="../../work.html">WORK</a>
-                    </li>
-        
-                    <li class="nav-item">
-                        <a class="nav-link" href="../../about.html">ABOUT</a>
-                    </li>
-
-                    <li class="nav-item d-none d-sm-block">
-                        <a class="nav-link" href="../../assets/resume.pdf">RESUME</a>
-                    </li>
-        
-                    <li class="nav-item d-none d-sm-block">
-                        <a class="nav-link" href="https://github.com/kellycmao12" target="_blank">
-                            <i class="fa fa-github" style="font-size:1.1rem"></i>
-                        </a>
-                    </li>
-        
-                    <li class="nav-item d-none d-sm-block">
-                        <a class="nav-link" href="https://linkedin.com/in/kellycmao" target="_blank">
-                            <i class="fa fa-linkedin-square" style="font-size:1.1rem"></i>
-                        </a>
-                    </li>
-                </ul>
-                </nav>
-        
-            </div>
-        </div>
+        <div id="navbar"></div>
+        <script>
+        // Load the navbar.html content into the div with id "navbar"
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch("../project-navbar.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("navbar").innerHTML = data;
+            });
+        });
+        </script>
           
         <div class="row"> 
             <div class="col-12 offset-sm-0 col-md-8 offset-md-2 col-lg-8 offset-lg-2 vertical-center">
@@ -70,7 +41,7 @@
                     <h2 class="proj-name-big mb-2">Symbiota</h2>
                     <p class="light mb-4">Nov 2021</p>
                     
-                    <p class="mb-4">This is a game simulating the human gut microbiome, 
+                    <p class="mb-4">A game simulating the human gut microbiome, 
                         aimed at promoting healthy eating.
                     </p>
 
