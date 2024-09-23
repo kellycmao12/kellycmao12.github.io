@@ -209,7 +209,7 @@ video {
     margin: 0 60px;
 }
 
-.wide-row .col-3, .col-5, .col-6, .col-7 {
+.wide-row .col-md-5, .col-md-7 {
     padding-left: 4px;
     padding-right: 4px;
 }
@@ -236,5 +236,9 @@ iframe {
     height: 100%;
 }
 
-.contribution-caption {
+
+@media only screen and (max-width: 767px) {
+    .contribution-caption {
+        font-size: 14px; /* Adjust font size for small screens */
+    }
 }
