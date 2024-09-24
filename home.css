@@ -93,6 +93,10 @@ html {
     text-decoration: none;
 }
 
+#projects-top {
+    margin-bottom: 50px;
+}
+
 .project-row {
     display: flex;
     align-items: center;

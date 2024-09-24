@@ -44,7 +44,8 @@ a:hover, i:hover {
 }
 
 a:hover, .nav-link:hover {
-    text-decoration: underline;
+    text-decoration: underline 0.5px;
+    text-underline-offset: 6px;
 }
 
 .about-link {
@@ -219,7 +220,16 @@ hr {
 /* the single-line description shown w a project's thumbnail on home/work/play pages */
 .tagline {
     margin-top: 15px;
-    font-size: 14px;
+    font-size: 15px;
+}
+
+.tagline-extra {
+    font-size: 15px;
+    color: rgb(145, 145, 145);
+}
+
+.tagline-extra a {
+    color: rgb(145, 145, 145);
 }
 
 .work-grid-sm, .work-grid-lg {
