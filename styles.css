@@ -49,13 +49,14 @@ a:hover, .nav-link:hover {
 }
 
 .about-link {
-    color: #FF5CC7;
-    font-weight: bold;
+    color: #f92bb1;
+    /* font-weight: bold; */
 }
 
 .about-link:hover {
-    
-    text-decoration: underline;
+    color: #fd52c1;
+    text-decoration: underline 0.5px;
+    text-underline-offset: 6px;
 }
 
 .nav-item {
