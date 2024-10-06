@@ -48,13 +48,18 @@ a:hover, .nav-link:hover {
     text-underline-offset: 6px;
 }
 
+.reg-link {
+    text-decoration: underline 0.5px;
+    text-underline-offset: 6px;
+}
+
 .about-link {
     color: #f92bb1;
     /* font-weight: bold; */
 }
 
 .about-link:hover {
-    color: #fd52c1;
+    color: #f92bb1;
     text-decoration: underline 0.5px;
     text-underline-offset: 6px;
 }
