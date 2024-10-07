@@ -262,7 +262,7 @@ video {
     margin: 0 60px;
 }
 
-.wide-row .col-md-5, .col-md-7 {
+.wide-row .col-md-5, .col-md-4, .col-md-7, .col-md-8 {
     padding-left: 4px;
     padding-right: 4px;
 }
@@ -314,4 +314,24 @@ iframe {
 
 #more-arrow a {
     text-decoration: none;
+}
+
+.ps-gallery video {
+    
+    background-color: #e3ded0;
+    border-radius: 15px;
+    display: block;
+    width: 100%; /* Make the video responsive */
+    box-sizing: border-box; /* Ensures the padding is included in the width calculation */
+}
+
+#lincoln-gif {
+    width: auto; /* Maintain aspect ratio */
+    height: 100%; /* Fill the height of the bounding box */
+    max-width: 100%;
+    max-height: 100%;
+    padding: 40px;
+    object-fit: contain; /* Ensures the video doesn't stretch */
+    position: relative;
+    box-sizing: border-box; /* Include padding within the element’s dimensions */
 }
