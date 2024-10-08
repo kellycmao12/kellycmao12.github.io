@@ -335,3 +335,17 @@ iframe {
     position: relative;
     box-sizing: border-box; /* Include padding within the element’s dimensions */
 }
+
+.callout-ps {
+    background-color: #ebe8de;
+    border-radius: 15px;
+    display: block;
+    padding: 30px;
+}
+
+.callout-ng {
+    background-color: #d5e1ee;
+    border-radius: 15px;
+    display: block;
+    padding: 30px;
+}
